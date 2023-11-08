@@ -18,7 +18,10 @@ class Product extends Component {
   })
  }
 render() {
-   return <div className="container">
+   return <>
+   <h3>Product Details</h3>
+   <div className="container">
+    
     <pre>{JSON.stringify(this.state)}</pre>
 
     <div className="row">
@@ -44,6 +47,7 @@ render() {
       </div>
     </div>
    </div>
+   </>
   }
 }
 

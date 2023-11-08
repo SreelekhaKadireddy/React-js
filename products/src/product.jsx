@@ -9,10 +9,12 @@ class Product extends Component{
 
     render(){
         return <div className="container">
+            
             <pre>
                 {JSON.stringify(this.state)}
             </pre>
             <div className="container">
+            <h3>Product Details</h3>
                 <div className="row">
                     <div className="col-8">
                         <table className="table">
