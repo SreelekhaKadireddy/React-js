@@ -3,7 +3,7 @@
 -we can create multiple state hooks to track individual values
 */
 import react, { useState } from "react";
-function App(){
+function Usestate_ex(){
     const[count,setCount]=useState(0)
     const [theme,setTheme]=useState("blue")
     
@@ -24,4 +24,4 @@ function App(){
         </>
     )
 }
-export default App;
+export default Usestate_ex;
