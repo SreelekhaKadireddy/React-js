@@ -1,0 +1,7 @@
+Steps to build react to do application
+Step1:>npx create-react-app todo-react
+Step2:>cd todo-react
+Step3:open app.js file in src folder and write code to create to-do-app
+Step4:run react app
+        >npm start
+check the application running on local host
