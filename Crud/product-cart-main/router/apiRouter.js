@@ -4,7 +4,7 @@ const Product = require('../models/Product');
 
 /*
     USAGE : Get all the products
-    URL : http://127.0.0.1:8080/api/products
+    URL : http://127.0.0.1:27017/api/products
     Method : GET
     Fields : no-fields
  */
@@ -23,7 +23,7 @@ router.get('/products', async (request , response) => {
 
 /*
     USAGE : Get a Single Product
-    URL : http://127.0.0.1:8080/api/products/:id
+    URL : http://127.0.0.1:27017/api/products/:id
     Method : GET
     Fields : no-fields
  */
@@ -43,7 +43,7 @@ router.get('/products/:id', async (request , response) => {
 
 /*
     USAGE : Create a Product
-    URL :   http://127.0.0.1:8080/api/products
+    URL :   http://127.0.0.1:27017/api/products
     Method : POST
     Fields : name , image , price , qty , info
  */
@@ -80,7 +80,7 @@ router.post('/products', async (request , response) => {
 
 /*
     USAGE : Update a Product
-    URL : http://127.0.0.1:8080/api/products/:id
+    URL : http://127.0.0.1:27017/api/products/:id
     Method : PUT
     Fields : name , image , price , qty , info
  */
@@ -120,7 +120,7 @@ router.put('/products/:id', async (request , response) => {
 
 /*
     USAGE : Delete a Product
-    URL : http://127.0.0.1:8080/api/products/:id
+    URL : http://127.0.0.1:27017/api/products/:id
     Method : DELETE
     Fields : no-fields
  */

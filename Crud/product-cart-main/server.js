@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // const hostname = process.env.SERVER_HOST_NAME;
 const port = process.env.PORT;
+const hostname = process.env.HOST_NAME
 
 app.get('/', (request, response) => {
     response.send(`<h2>Welcome to BigBasket Express Server</h2>`);
