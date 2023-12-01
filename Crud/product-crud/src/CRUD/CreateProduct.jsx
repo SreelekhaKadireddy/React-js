@@ -26,10 +26,11 @@ const CreateProduct=()=>{
         event.preventDefault()
         Axios.post('http://127.0.0.1:8080/api/products',product)
         .then(()=>{
-            //get the result
+            alert("product created Successfully..")
            })
            .catch(()=>{
             //display error
+            alert("error")
            })
     }
     return(
