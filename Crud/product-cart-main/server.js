@@ -12,8 +12,9 @@ app.use(cors());
 dotEnv.config({ path: './config/config.env' });
 
 // configure express to receive the form data
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+const maxRequestBodySize = '500Mb';
+app.use(express.json({limit: maxRequestBodySize}));
+app.use(express.urlencoded({limit: maxRequestBodySize}));
 
 // const hostname = process.env.SERVER_HOST_NAME;
 const port = process.env.PORT;
